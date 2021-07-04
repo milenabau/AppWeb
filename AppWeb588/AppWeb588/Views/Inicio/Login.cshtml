@@ -1,0 +1,45 @@
+﻿@using System.Net
+@{
+    var returnUrl = ViewData["ReturnUrl"] as string;
+    var error = TempData["Error"] as string;
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="estiloH1"> Inicie Sesión </h1>
+
+<section class="estiloSection">
+
+    <div class="contenedor40">
+
+        @if (!string.IsNullOrEmpty(error))
+            {
+                <div class="text-body"> @error </div>
+            }
+
+        <form action ="Login?ReturnUrl=@WebUtility.UrlEncode(returnUrl)" method="post">
+            
+                <div class="mb-3">
+                    <label class="form-label">Usuario</label>
+                    <input type="text" name="username" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Contraseña</label>
+                    <input type="password" name="password"class="form-control" required>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+            
+
+        </form>
+    </div>
+
+    <div class="contenedor30">
+        <div class="contenedorImgPrincipal">
+            <img class="ImgPrincipal" src="~/images/filisofia.jpg" alt="">
+        </div>
+    </div>
+
+</section>
+
+

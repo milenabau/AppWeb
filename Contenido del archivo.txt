@@ -1,0 +1,17 @@
+Contenido de AppWeb
+
+1. Carpeta AppMockup
+
+Contiene los archivos del desarrollo de HTML en NetCore.
+
+2. Carpeta AppWeb588
+
+Contiene los archivos de la aplicacion en .Net
+
+3.Base de Datos
+
+Contiene los archivos de la Data de cliente y usuario.
+
+4. Documento Bitacora en PDF
+
+5. Video Presentacion App

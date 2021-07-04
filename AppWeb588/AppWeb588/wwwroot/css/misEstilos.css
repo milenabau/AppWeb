@@ -1,0 +1,314 @@
+/* HOJA DE ESTILOS cuando se crean por clases las antecede un punto
+el formato es el siguiente:
+
+.nombreEstilo {
+    -- las propiedades
+}
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.estiloBody{
+    font-family: 'Newsreader';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.contenedorDatos {
+    width: 90%;
+    padding: 5px;
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    
+
+}
+
+.contenedor100{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: flex-start;
+    background-color:white;
+  }
+
+.contenedor80 {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+.contenedor70 {
+    width: 70%;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+}
+
+.contenedor60 {
+    width: 60%;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+}
+
+.contenedor50 {
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+}
+
+.contenedor40 {
+    width: 40%;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+}
+
+.contenedor30 {
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+}
+
+
+.contenedor20 {
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+
+.contenedorProducto{
+    width: 100%;
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(255, 255, 255); 
+    border-radius: 5px; 
+}
+
+.contenedorProductos{
+    width: 100%;
+    display:flex;
+    padding: 5px 10px 5px 10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+
+.estiloTextosProduc{
+    
+    font-size:small;
+    font-weight: 200;
+}
+
+
+/* Estilos para el Header*/
+.estiloHeader {
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #27a127;
+    margin-top: 25px;
+}
+
+.contenedorLogo{
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+}
+.imgLogo{
+    width: 100%;
+}
+
+.estiloUl{
+    display: flex;
+    justify-content:flex-start;
+}
+
+.estiloLi{
+    padding: 15px 20px 15px 20px;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    list-style:none;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+.estiloLink{
+    text-decoration: none;
+    font-size: medium;
+    font-weight: 800;
+    color: rgb(20, 20, 20);
+}
+
+.estiloBoton {
+    text-decoration: none;
+    font-size: medium;
+    font-weight: 800;
+    padding: 5px;
+    background-color:darkgray;
+    border-radius: 5px;
+    margin:10px;
+    border: 1px solid #000000;
+}
+
+.estiloBoton:hover {
+    background-color:palegreen;
+    text-decoration: none;
+    }
+
+.estiloLi:hover {
+    background-color: palegreen;
+    text-decoration: none;
+}
+/* Estilos para el Main*/
+
+.estiloMain {
+    background-color:cadetblue;
+    width: 80%;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    min-height: 400px;
+}
+
+.estiloH1{
+    font-size:x-large;
+    font-weight: 800;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+}
+
+.estiloTextos{
+    
+    font-size:larger;
+    font-weight: 300;   
+    margin: 10px;
+}
+
+.estiloSection{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+/*.contenedorImgPrincipal {
+    width: 30%;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+}*/
+
+.contenedorImgPrincipal {
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+}
+/*.contenedorTxtPrincipal{
+    width: 60%;
+    padding: 15px 25px 15px 25px;
+    background-color: white;
+    padding: 15px 25px 15px 25px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}*/
+
+.contenedorTxtPrincipal{
+    width: 90%;
+}
+
+.ImgPrincipal{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Estilos para el Footer*/
+
+.estiloFooter {
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #27a127
+}
+
+.imgIco{
+    width: 25px;
+    margin: 10px;
+}
+
+.contenedorInfluencer{
+    display: flex;
+    align-items: center;
+}
+
+.estiloTextFooter{
+    font-weight:400;
+    font-size:small;
+    
+}
+@media screen and (max-width:500px) {
+
+    .contenedorProductos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedorProducto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedorImgPrincipal {
+        width: 100%;
+    }
+
+    .contenedorTxtPrincipal {
+        width: 90%;
+    }
+} 

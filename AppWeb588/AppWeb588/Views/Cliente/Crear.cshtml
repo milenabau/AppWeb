@@ -1,0 +1,49 @@
+﻿@model AppWeb588.Models.Cliente
+@{
+    ViewData["Title"] = "Crear";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="estiloSection">
+    <div class="contenedor100">
+        <h3 class="estiloH1"> Listar Clientes </h3>
+        <div class="contenedorDatos">
+
+            <div class="contenedor20">
+                <div>
+                    <a class="estiloBoton" asp-action="Index"> Volver al Listado </a>
+                </div>
+            </div>
+
+            <div class="contenedor50">
+                <form asp-action="crear">
+
+                    <div>
+                        <label asp-for="Codigo" class="control-label"></label>
+                        <input asp-for="Codigo" class="form-control" required />
+                        <span class="text-danger"> @ViewData["msj"]</span> 
+                     
+                    </div>
+
+                    <div>
+                        <label asp-for="Nombre" class="control-label"></label>
+                        <input asp-for="Nombre" class="form-control" required />
+                    </div>
+
+                    <div>
+                        <label asp-for="Correo" class="control-label"></label>
+                        <input asp-for="Correo" type="email" class="form-control" required />
+                    </div>
+
+                    <div>
+                        <input type ="submit" class="estiloBoton" value="Guardar" />
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+

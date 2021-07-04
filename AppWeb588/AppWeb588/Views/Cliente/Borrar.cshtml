@@ -1,0 +1,45 @@
+﻿@model AppWeb588.Models.Cliente
+@{
+    ViewData["Title"] = "Borrar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="estiloSection">
+    <div class="contenedor100">
+        <h3 class="estiloH1"> Esta seguro de borrar los datos del Cliente </h3>
+        <div class="contenedorDatos">
+
+            <div class="contenedor20">
+                <div>
+                    <a class="estiloBoton" asp-action="Index"> Volver al Listado </a>
+                </div>
+            </div>
+
+            <div class="contenedor50">
+
+                <div>
+                    codigo @Model.Codigo
+                </div>
+                <div>
+                    codigo @Model.Nombre
+                </div>
+                <div>
+                    codigo @Model.Correo
+                </div>
+
+                <div>
+                    <form asp-action="Borrar">
+                        <input type="hidden" asp-for="Codigo" />
+                        <input type="submit" class="estiloBoton" value="Borrar" />
+                    </form>
+
+                   
+
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</section>
+
+

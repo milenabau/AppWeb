@@ -1,0 +1,75 @@
+﻿@using X.PagedList.Mvc.Core;
+@using X.PagedList;
+@model IEnumerable<AppWeb588.Models.Cliente>
+@{
+    ViewData["Title"] = "Listar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="estiloSection">
+    <div class="contenedor100">
+        <h3 class="estiloH1"> Listar Clientes </h3>
+        <div class="contenedorDatos">
+
+            <div class="contenedor20">
+                <div>
+                    <a class="estiloBoton" asp-action="Crear"> Agregar Nuevo </a>
+                </div>
+            </div>
+
+            <div class="contenedor80">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th> codigo </th>
+                            <th> Nombre </th>
+                            <th> correo </th>
+                            <th>  </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @foreach (var myCliente in Model)
+                        {
+                            <tr>
+                                <td> @myCliente.Codigo </td>
+                                <td> @myCliente.Nombre </td>
+                                <td> @myCliente.Correo </td>
+                                <td>
+                                    @Html.ActionLink("Editar", "Editar", new { id = myCliente.Codigo })
+                                    @Html.ActionLink("Detalle", "Detalle", new { id = myCliente.Codigo })
+                                    @Html.ActionLink("Borrar", "Borrar", new { id = myCliente.Codigo })
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+                <!-- definimos los objetos de navegacion-->
+               
+                @Html.PagedListPager((IPagedList)Model, page => Url.Action("index", new { page = page }),
+                   new X.PagedList.Mvc.Core.Common.PagedListRenderOptions
+                   {
+                       DisplayItemSliceAndTotal = false,
+                       ContainerDivClasses = new[] {"navigation"},
+                       LiElementClasses = new[] { "estiloLi" },
+                       PageClasses = new[] { "estiloLink" },
+
+                   })
+
+                @section Scripts {
+                    <script>
+                        $(document).ready(function () {
+                        $('ul.pagination > li.disabled > a').addClass('page-link');
+                        })
+                    </script>
+                
+                }
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
